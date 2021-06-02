@@ -36,7 +36,8 @@ public abstract class GenericServiceImpl<T, ID extends Serializable> implements 
 		getDao().findAll().forEach(obj -> returnList.add(obj));
 		return returnList;
 	}
+	//SE implementan los metodos de la clase generica
 
 	public abstract CrudRepository<T, ID> getDao();
-
+      //neceito un metodo para saber en que repositorio pega(CrudRepository)
 }

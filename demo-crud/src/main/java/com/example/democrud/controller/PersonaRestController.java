@@ -18,7 +18,7 @@ import com.example.democrud.service.api.PersonaServiceAPI;
 
 @RestController
 @RequestMapping(value = "/api/v1/")
-@CrossOrigin("*")
+@CrossOrigin("http://localhost:3000")
 public class PersonaRestController {
 
 	@Autowired
